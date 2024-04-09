@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제</title>
+    <script>
+        // 증가랑 감소 버튼을 만들거임(body에) 증가를 누르면 1,2,3,4,5...증가 할 것이고
+        // 감소를 누르면 5,4,3,2,1,.. 감소할 것이다.
+        // * 함수 1개만 사용해서 매개변수로 1,2 넣으면 1씩2씩 증/감하기!!
+
+        // 문제 세분화
+        // 1-1. body에 버튼만들기
+        // 1-2. 증가를 누르면 숫자가 커지도록 하여라
+        let x = 0
+        function add(){
+                document.write(`<div>${x+=1}</div><button onclick="add()">증가</button><button onclick="sub()">감소</button>`)
+                document.close()
+        }
+        function sub(){
+                document.write(`<div>${x-=1}</div><button onclick="add()">증가</button><button onclick="sub()">감소</button>`)
+                document.close()
+        }
+        function comp(){
+            
+        }
+    </script>
+</head>
+<body>
+    <div>0</div>
+    <button onclick="add()">증가</button>
+    <button onclick="sub()">감소</button>
+</body>
+</html>
